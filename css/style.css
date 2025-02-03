@@ -1,0 +1,110 @@
+@import url(./First.css);
+@import url(./Second.css);
+@import url(./Third.css);
+@import url(./Fourth.css);
+@import url(./Fifth.css);
+@import url(./Six.css);
+@import url(./Seven.css);
+@import url(./Eight.css);
+@import url(./Nine.css);
+
+/*  */
+/* обнуление */
+* 
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+ul li{
+  list-style-type: none;
+  
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+:root{
+    --black:#424242;;
+    --white:#FFFFFF;
+    --red:  #FF2525;
+    /* резиновые параметры */
+    --index: calc(1vw + 1vh)
+    }
+body{
+background-color: #131313;
+
+}
+
